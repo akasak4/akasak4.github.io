@@ -1,74 +1,285 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
 
-<head>
-<title>akasaka2</title>
-</head>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+        <div id="container"><div id="header" style="height: 109px;"> 
+        <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp AKASAKA</h2>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp the modern web on a slow connection</p></div>
+            <div id="headerArea">
+                
+                
+            <nav id="navbar" style=><ul>
+                <li><a href="index.html" class="style">Home</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+               
+              </ul></nav></div>
 
-<h1> Akasaka </h1> 
-
-<hr style="height:2px;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
-<p><a href="index.html" class="style">[ index ]</a>
-<a href="about.html" class="style">[ about ]</a>
-    <a href="pgp.html" class="style">[ pgp ]</a>
-    [ faq ]</a>
-
-</p>
-<p><b>■ Frequently Asked Questions</b></p>
+            
+                <main>
+                    
+                    <h2><b>FAQ</b></h2>
+                    <p><b>■ Frequently Asked Questions</b></p>
 
 <p2><b>Software apa yang digunakan untuk membuat situs atau blog ini?</b>
 </p2>
 
 <p>Saya menggunakan Software Visual Studio Code untuk membuat situs atau blog ini.</p>
 
-<p2><b>Mengapa Anti-Mainstream?</b></p2>
+<p2><b>Apa yang dibahas di situs ini?</b></p2>
 
-<p>ngga tau :v </p>
+<p>Sebisa mungkin saya akan sering membahas hal berkaitan dengan Teknologi. Walaupun terkadang mungkin lebih sering membahas 
+    atau mengulas Film dan Anime. Semuanya tergantung mood aja sih.
+</p>
 
+<p2><b>Ehh... 2 Bahasa? Mengapa harus menggunakan 2 bahasa berbeda?</b></p2>
+<p>Dikarenakan masih agak susah untuk bisa memisahkan artikel-artikel atau postingan yang ada di situs ini untuk 
+    dikelompokkan menjadi dua. Alasan saya menggunakan 2 bahasa berbeda adalah dikarenakan mood menulis saya.
+Terkadang saya dapat ide menulis menggunakan bahasa inggris atau sebaliknya. Jadi jika anda kebingungan dengan artinya
+anda bisa menggunakan fitur Google Translate yang disediakan oleh Google Chrome</p>
+                    
 
-<style>
-    h1 {text-align: center;}
-    body
-    {
-       background-color: #eeddcc;
-       color: #000000;
-       font-family: Arial;
-    
-    }
-    
-</style>
+                </main>
+                
+            </div>
+            
+        
+        </div>
 
-<style>
-    p2 {
-        color: red;
-    }
-
-
-</style>
+        <style>
 
 
-<style>
-    a:link {
-      color: red;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    
-    a:visited {
-      color: red;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: red;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-    
-    a:active {
-      color: red;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-    </style>
+            :root {
+                --header-image: 
+                --body-bg-image: url();
+
+                --content: #43256E;
+            }
+
+
+            @font-face {
+                font-family: Nunito;
+                src: local("Nunito-Reguler.ttf");
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: local("Nunito-Bold.ttf");
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: local("Nunito-Italic.ttf");
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: local("Nunito-BoldItalic.ttf");
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #eeddcc;
+                background-size: 65px;
+                color: #000000;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            #container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }
+
+            #container             
+            a:hover {color: red;
+                font-weight: bold;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+                
+            a:link     { color: red;
+     background-color: transparent;
+     text-decoration: none; }
+
+     a:visited {
+     color: red;
+     background-color: transparent;
+     text-decoration: none;
+   }
+
+   a:active {
+     color: red;
+     background-color: transparent;
+     text-decoration: underline;
+   }
+
+            #header {
+                width: 100%;
+                background-color: #eeddcc;
+                height: 150px;
+                background-image: var(--header-image);
+                background-size: 100%;
+                border: solid;
+                border-width: 2px;
+                border-bottom-width: 0px;
+            }
+
+            #navbar {
+                height: 40px;
+                background-color: #eeddcc;
+                width: 100%;
+                border: solid;
+                border-width: 2px;
+                border-bottom-width: 0px;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+                
+            }
+
+            #navbar li {
+                padding-top: 8px;
+            }
+
+            #navbar li a {
+                color: #000000;
+                font-weight: 800;
+                text-decoration: none;
+                
+            }
+
+            #navbar li a:hover {
+                color: red;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            aside {
+                background-color: #eeddcc;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+
+            }
+
+            main {
+                background-color: #eeddcc;
+                flex: 1;
+                padding: 10px;
+                order: 2;
+                border: solid;
+                border-width: 2px;
+                height: 790px;
+            }
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #eeddcc;
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                
+
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #000000;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            strong {
+
+                color: #000000;
+            }
+
+
+            .box {
+                background-color: #eeddcc;
+                border: 1px solid #000000;
+                padding: 10px;
+            }
+
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+            @media only screen and (max-width: 1200) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+
+            
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+
+        </style>
+
+  </body>
+</html>
